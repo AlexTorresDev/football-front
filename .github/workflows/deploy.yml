@@ -1,0 +1,14 @@
+name: React app deployment
+
+on:
+  push:
+    branches: [main]
+      
+  workflow_dispatch:
+      
+jobs:
+  build-deploy:
+    runs-on: ubuntu-22.04
+    steps:
+    - id: build-publish
+      uses: bitovi/github-actions-react-to-ghp@v1.2.0
