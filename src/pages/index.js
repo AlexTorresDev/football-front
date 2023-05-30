@@ -54,7 +54,7 @@ export default function Home() {
       </Typography>
 
       <Image
-        src="./back.png"
+        src="/back.png"
         alt="Análisis de datos"
         width={200}
         height={200}
