@@ -33,7 +33,7 @@ export default function Home() {
       })
     }
 
-    fetch('http://localhost:8000/match/', requestOptions)
+    fetch('https://twritp7sqy.us-east-1.awsapprunner.com/match/', requestOptions)
       .then(response => response.json())
       .then(data => {
         console.log(data);
