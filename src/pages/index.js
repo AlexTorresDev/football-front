@@ -37,7 +37,6 @@ export default function Home() {
     fetch('https://twritp7sqy.us-east-1.awsapprunner.com/match/', requestOptions)
       .then(response => response.json())
       .then(data => {
-        console.log(data);
         if ((typeof (data.winner) === 'string') && data.winner.toLowerCase() === 'draw') {
           setWinner('Se predice que podría llegar a ser un empate');
         } else {
@@ -55,7 +54,7 @@ export default function Home() {
       </Typography>
 
       <Image
-        src="/back.png"
+        src="./back.png"
         alt="Análisis de datos"
         width={200}
         height={200}
