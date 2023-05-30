@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { Inter } from 'next/font/google'
 import { Select, Option, Button, Typography } from '@material-tailwind/react'
 import { home_team, away_team, country as countries } from '../data/label_encoder_transformations.json'
+import Image from 'next/image'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -53,7 +54,14 @@ export default function Home() {
         Proyecto final de <span className="font-bold text-green-500">Análisis de datos</span>
       </Typography>
 
-      <div className="mb-52 relative flex-col gap-20 flex place-items-center before:absolute before:h-[300px] before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-green-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-green-700/10 after:dark:from-sky-900 after:dark:via-[#0141ff]/40 before:lg:h-[360px]">
+      <Image
+        src="/back.png"
+        alt="Análisis de datos"
+        width={200}
+        height={200}
+      />
+
+      <div className="mt-8 mb-20 relative flex-col gap-20 flex place-items-center before:absolute before:h-[300px] before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-green-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-green-700/10 after:dark:from-sky-900 after:dark:via-[#0141ff]/40 before:lg:h-[360px]">
         <div className="flex justify-center flex-col gap-6">
           <div className="flex items-center gap-6">
             <div className="w-72">
